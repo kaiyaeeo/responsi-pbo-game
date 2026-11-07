@@ -39,23 +39,3 @@ pbo-game-balqis-safitri/
 8. **Logika state dan percabangan:** implementasi `takeTurn()` memakai `if/else`, membaca health/mana, lalu mengubah health/mana objek.
 9. **Polimorfisme interface:** `SkillUser skillUser = new Warrior(...)` kemudian memanggil `skillUser.useSkill(mage)`.
 10. **Multiple interface:** `Warrior implements SkillUser, Defensible`.
-
-```bash
-cd pbo-game-balqis-safitri
-rm -rf build
-mkdir build
-javac -d build src/*.java
-java -cp build Main
-```
-
-Windows PowerShell:
-
-```powershell
-cd pbo-game-balqis-safitri
-Remove-Item -Recurse -Force build -ErrorAction SilentlyContinue
-New-Item -ItemType Directory build
-javac -d build src/*.java
-java -cp build Main
-```
-
-Keluaran uji yang sudah dijalankan tersedia di [`docs/output.txt`](docs/output.txt). Program menampilkan identitas, pembuktian state/behavior, pemanggilan interface, simulasi tiga ronde, dan pemenang pertandingan.
