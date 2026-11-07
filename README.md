@@ -22,7 +22,7 @@ pbo-game-balqis-safitri/
 │   ├── Defensible.java
 │   └── Main.java
 ├── docs/
-│   └── output.txt
+│   └── Output Arena Nusantara.pdf
 ├── .gitignore
 └── README.md
 ```
